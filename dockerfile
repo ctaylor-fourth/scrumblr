@@ -9,4 +9,4 @@ COPY . /usr/local/scrumblr
 
 EXPOSE 8080
 
-CMD [ "cd", "/usr/local/scrumblr", "&&" ,"node", "server.js", "--redis", "10.40.0.7:6379" ]
+CMD [ "sh", "-c", "node /usr/local/scrumblr/server.js --redis 10.40.0.7:6379" ]
